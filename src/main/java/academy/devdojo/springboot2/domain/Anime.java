@@ -13,8 +13,8 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @Entity
+@Builder
 public class Anime {
 
     @Id
