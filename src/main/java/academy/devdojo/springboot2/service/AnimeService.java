@@ -31,7 +31,6 @@ public class AnimeService {
                         .orElseThrow(() -> new BadRequestException("Anime not found"));
     }
 
-    // @Transactional(rollbackFor = Exception.class) // usar quando for excecao checada
     @Transactional
     public Anime save(AnimePostRequestBody animePostRequestBody) {
         return animeRepository.save(AnimeMapper.INSTANCE.toAnime(animePostRequestBody));

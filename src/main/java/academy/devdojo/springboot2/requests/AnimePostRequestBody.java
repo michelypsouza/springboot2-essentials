@@ -8,7 +8,6 @@ import javax.validation.constraints.NotEmpty;
 public class AnimePostRequestBody {
 
     @NotEmpty(message = "The anime name cannot be empty")
-//    @NotNull(message = "The anime name cannot be null") // a validacao acima ja faz isso tbm
     private String name;
 
 }
